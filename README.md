@@ -16,29 +16,16 @@ habiTrack is a demo habit tracker which aims to help users track and improve the
 
 ## Installation
 
-### Requirements
-You must first install Expo, which can be found [here](https://docs.expo.dev/get-started/create-a-project/).
-
-After you have installed and set up Expo, follow these steps.
-
-2. Download the program.
-3. Open the code in your  IDE.
-4. Dowwnload and set up the business logic [here](https://github.com/connor-cliff/habiTrack). Ensure your SQL server is running.
-5. Run the following command in the terminal 
-```
-npx expo start --tunnel 
+1. Download the program.
+2. In the file application.properties, replace "root" in the following lines with your MySQL username and password: 
 
 ```
-5. If you get the error:
+spring.datasource.username=root
+spring.datasource.password=root
 ```
-CommandError: ngrok tunnel took too long to connect.
-```
-Then just try the command again. It usually works after a couple tries.
 
-6. After successfully connecting, a QR code will be logged in the terminal. This can be scanned on an android or iOS mobile with Expo Go installed. 
-
-Note: All instances of HTTP requests with "localhost" in the program code must be changed to your IP if using the mobile version.
-
+3. Run TrackerApplication main method to start the program.
+4. Complete steps found [here](https://github.com/connor-cliff/habiTrack-React).
 
 
 
